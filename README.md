@@ -23,10 +23,10 @@
 
 <h2><span class="emoji">📸</span> Capturas de pantalla</h2>
 
-<p><img src="screenshots/main-screen.png" alt="Interfaz principal"><br>
+<p><img src="assets/images/Screenshot_1.png" alt="Interfaz principal"><br>
 <em>Interfaz principal con números destacados</em></p>
 
-<p><img src="screenshots/complete-column.png" alt="Columna completa"><br>
+<p><img src="assets/images/Screenshot_4.png" alt="Columna completa"><br>
 <em>Columna completa con indicador visual</em></p>
 
 <h2><span class="emoji">🛠️</span> Requisitos técnicos</h2>

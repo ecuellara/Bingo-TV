@@ -142,9 +142,9 @@ gainNode.gain.value = 0.5;       // Volumen (0 a 1)
 
 <h2><span class="emoji">✉️</span> Contacto</h2>
 
-<p>Everson Cuellar - <a href="mailto:tu-email@example.com">tu-email@example.com</a></p>
+<p>Everson Cuellar - <a href="mailto:tu-email@example.com">cuellareverson@gmail.com</a></p>
 
-<p>Enlace del proyecto: <a href="https://github.com/tu-usuario/bingo-tv">https://github.com/tu-usuario/bingo-tv</a></p>
+<p>Enlace del proyecto: <a href="https://github.com/ecuellara/Bingo-TV">https://github.com/ecuellara/bingo-tv</a></p>
 
 <hr>
 

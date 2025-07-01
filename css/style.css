@@ -1,0 +1,141 @@
+/* Reset y base - Mantenido igual */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes clave en el contenedor principal */
+body {
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+    color: #FFFFFF;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    overflow: hidden; /* Cambiado de auto a hidden */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1vh 0; /* Reducido el padding vertical */
+}
+
+.app-container {
+    width: 98vw; /* Aumentado ligeramente */
+    height: 96vh; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    gap: 1vh; /* Reducido el gap */
+}
+
+/* Título - Más compacto */
+h1 {
+    color: #FFD700;
+    font-size: 4rem; /* Reducido de 5rem */
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    margin: 0.5vh 0; /* Margen reducido */
+}
+
+/* Contenedor de columnas - Ajuste de altura */
+.letters-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw; /* Reducido el gap horizontal */
+    flex-wrap: nowrap;
+    height: 90vh; /* Altura fija */
+}
+
+/* Columna individual - Ajuste para 15 números */
+.letter-column {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+    border-radius: 15px; /* Reducido ligeramente */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vh 0.5vw; /* Padding reducido */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #444;
+    overflow: visible;
+    height: 100%; /* Ocupa toda la altura disponible */
+}
+
+/* Encabezado de letra - Más compacto */
+.letter-header {
+    color: #00E0FF;
+    font-size: 3.5rem; /* Reducido de 4.5rem */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5vh; /* Reducido */
+    padding-bottom: 0.5vh; /* Reducido */
+    border-bottom: 2px solid #00E0FF; /* Reducido grosor */
+    text-shadow: 0 0 10px rgba(0, 224, 255, 0.6);
+}
+
+/* Lista de números - Ajuste clave */
+.numbers {
+    display: grid; /* Cambiado a grid para mejor control */
+    grid-template-rows: repeat(15, 1fr); /* 15 filas de igual altura */
+    gap: 1vh; /* Gap reducido */
+    font-size: 3rem; /* Reducido de 3rem */
+    text-align: center;
+    height: calc(100% - 6rem); /* Altura calculada */
+    overflow: visible;
+}
+
+/* Número individual - Más compacto */
+.number {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #FFD700; /* Borde más fino */
+    border-radius: 8px;
+    padding: 0.5vh 0; /* Padding reducido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD700;
+    font-weight: bold;
+    min-height: 0; /* Permite compresión */
+}
+
+/* Botón - Posicionamiento absoluto */
+.action-button {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#00E0FF, #00B8D4);
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    padding: 1vh 2vw;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Resto de estilos se mantienen igual */
+.number.latest {
+    background-color: #FF4081;
+    color: #ffffff;
+    box-shadow: 0 0 20px #FF4081, 0 0 40px #FF4081;
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(255, 215, 0, 1); }
+    100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+}
+
+/* Media query ajustada */
+@media (min-width: 1920px) {
+    .letter-header { font-size: 4rem; }
+    .numbers { font-size: 2.5rem; }
+    .action-button { font-size: 2rem; }
+}

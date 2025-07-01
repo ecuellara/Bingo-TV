@@ -1,0 +1,27 @@
+{
+  "id": "com.example.bingo",
+  "version": "1.0.1",
+  "vendor": "Everson Cuellar",
+  "type": "web",
+  "main": "index.html",
+  "title": "Bingo TV",
+  "icon": "assets/images/imagen_3.png",
+  "largeIcon": "assets/images/imagen_3.png",
+  "tileColor": "#0B1C3D",
+  "platformVersion": "6.0.0",
+  "requiredPermissions": [
+    "audio.operation",
+    "tts.operation",
+    "application.operation"
+  ],
+  "resolution": "1920x1080",
+  "uiRevision": 2,
+  "category": "Games/Board/Card",
+  "description": {
+    "en": "Interactive Bingo game with voice announcements and visual effects. Perfect for family entertainment!",
+    "es": "Juego de Bingo interactivo con anuncios por voz y efectos visuales. ¡Perfecto para entretenimiento familiar!"
+  },
+  "ageRating": {
+    "esrb": "E"
+  }
+}
